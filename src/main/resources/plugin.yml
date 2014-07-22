@@ -1,0 +1,33 @@
+name: ${project.name}
+main: com.demigodsrpg.manyspawn.ManySpawnPlugin
+version: ${project.version}
+description: ${project.description}
+authors: [HmmmQuestionMark]
+commands:
+    safe:
+        usage: /<command>
+        description: Teleport to the safe spawn.
+        permission: manyspawn.safe
+    spawn:
+        usage: /<command>
+        description: Teleport to a random spawn.
+        permission: manyspawn.spawn
+    addspawn:
+        usage: /<command>
+        description: Add a new spawn location.
+        permission: manyspawn.addspawn
+    setsafe:
+        usage: /<command>
+        description: Set the new safe spawn location.
+        permission: manyspawn.setsafe
+permissions:
+    manyspawn.safe:
+        default: true
+    manyspawn.spawn:
+        default: true
+    manyspawn.addspawn:
+        default: op
+    manyspawn.setsafe:
+        default: op
+    manyspawn.keepgamemode:
+        default: false
